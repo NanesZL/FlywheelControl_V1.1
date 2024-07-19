@@ -1,0 +1,103 @@
+##
+Net Clk_50M               LOC = R7 |IOSTANDARD = LVCMOS33;
+
+########RST Pin define#####################  
+NET RST_INPUT				  LOC = A7 |IOSTANDARD = LVCMOS33;
+
+########AD Pin define#####################  
+#NET AD_dout				     LOC = B8 |IOSTANDARD = LVTTL;
+#NET AD_sclk				     LOC = A6 |IOSTANDARD = LVTTL;
+#NET AD_din				     LOC = A9 |IOSTANDARD = LVTTL;
+#NET AD_cs_n				     LOC = B6 |IOSTANDARD = LVTTL;
+#NET AD_dout				     LOC = AD5 |IOSTANDARD = LVTTL;
+#NET AD_sclk				     LOC = AC8 |IOSTANDARD = LVTTL;
+#NET AD_din				     LOC = AD8 |IOSTANDARD = LVTTL;
+#NET AD_cs_n				     LOC = AA1 |IOSTANDARD = LVTTL;
+
+########Q_Control Pin define#####################  
+NET PWMH1				     LOC = J6 	|IOSTANDARD = LVCMOS33;
+NET PWML1				     LOC = T8 	|IOSTANDARD = LVCMOS33;
+#NET PWMH2				     LOC = N9 	|IOSTANDARD = LVCMOS33;
+#NET PWML2				     LOC = T11 |IOSTANDARD = LVCMOS33;
+#NET PWMH3				     LOC = T12 	|IOSTANDARD = LVCMOS33;
+#NET PWML3				     LOC = T13 	|IOSTANDARD = LVCMOS33;
+#NET PWM_OE_n				  LOC = P12 	|IOSTANDARD = LVCMOS33;
+#NET PWMH4				     LOC = U6 	|IOSTANDARD = LVTTL;
+#NET PWML4				     LOC = W4 	|IOSTANDARD = LVTTL;
+#NET PWML5				     LOC = U4 	|IOSTANDARD = LVTTL;
+##NET PWM_OE_n				  LOC = M13 	|IOSTANDARD = LVTTL;
+NET Hall_a				     LOC = C5 	|IOSTANDARD = LVCMOS33;
+#NET Hall_b				     LOC = C4 	|IOSTANDARD = LVTTL;
+#NET Hall_c				     LOC = C2 	|IOSTANDARD = LVTTL;
+NET Hall_b				     LOC = C2 	|IOSTANDARD = LVCMOS33;
+NET Hall_c				     LOC = E1 	|IOSTANDARD = LVCMOS33;
+##
+########LED Pin define#####################         
+#NET LED                   LOC = AC17 |IOSTANDARD = LVTTL;  
+
+#########CWDSP Pin define#####################   
+#NET DSP_Add[0]            LOC = D24 |IOSTANDARD = LVTTL; 
+#NET DSP_Add[1]            LOC = B13 |IOSTANDARD = LVTTL; 
+#NET DSP_Add[2]            LOC = B20 |IOSTANDARD = LVTTL; 
+#NET DSP_Add[3]            LOC = D17 |IOSTANDARD = LVTTL; 
+#NET DSP_Add[4]            LOC = E13 |IOSTANDARD = LVTTL; 
+#NET DSP_Add[5]            LOC = D23 |IOSTANDARD = LVTTL; 
+#NET DSP_Add[6]            LOC = D22 |IOSTANDARD = LVTTL; 
+#NET DSP_Add[7]            LOC = A21 |IOSTANDARD = LVTTL; 
+#NET DSP_Add[8]            LOC = B19 |IOSTANDARD = LVTTL; 
+#NET DSP_Add[9]            LOC = C16 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[0]           LOC = E24 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[1]           LOC = E23 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[2]           LOC = F24 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[3]           LOC = F23 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[4]           LOC = G23 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[5]           LOC = H24 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[6]           LOC = H23 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[7]           LOC = N24 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[8]           LOC = M23 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[9]           LOC = K24 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[10]          LOC = J23 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[11]          LOC = J24 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[12]          LOC = G21 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[13]          LOC = G22 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[14]          LOC = M21 |IOSTANDARD = LVTTL; 
+#NET DSP_Data[15]          LOC = M20 |IOSTANDARD = LVTTL; 
+#NET DSP_XWEn				  LOC = F17 |IOSTANDARD = LVTTL; 
+
+
+######## SJA_Control Pin define#####################  
+#NET SJ_AD[0]				  LOC = N7 	|IOSTANDARD = LVTTL;
+#NET SJ_AD[1]				  LOC = N8 	|IOSTANDARD = LVTTL;
+#NET SJ_AD[2]				  LOC = N5 	|IOSTANDARD = LVTTL;
+#NET SJ_AD[3]				  LOC = N6 	|IOSTANDARD = LVTTL;
+#NET SJ_AD[4]				  LOC = N3 	|IOSTANDARD = LVTTL;
+#NET SJ_AD[5]				  LOC = P4 	|IOSTANDARD = LVTTL;
+#NET SJ_AD[6]				  LOC = M5 	|IOSTANDARD = LVTTL;
+#NET SJ_AD[7]				  LOC = T2 	|IOSTANDARD = LVTTL;
+#NET SJ_INT_n				  LOC = J6 	|IOSTANDARD = LVTTL;
+#NET SJA_Dir				  	  LOC = F1 	|IOSTANDARD = LVTTL;
+#NET SJ_RD_n				     LOC = K6 	|IOSTANDARD = LVTTL;
+#NET SJ_WR_n				     LOC = U3 	|IOSTANDARD = LVTTL;
+#NET SJ_ALE				     LOC = T3 	|IOSTANDARD = LVTTL;
+#NET SJ_CS_n					  LOC = K8 	|IOSTANDARD = LVTTL;
+#NET SJ_RST_n				  LOC = K5 	|IOSTANDARD = LVTTL;
+#NET SJA_OE_n			     LOC = J2 	|IOSTANDARD = LVTTL;
+
+
+
+
+########TEST Pin define#####################  
+#NET Torque_Dir	           LOC = A6 |IOSTANDARD = LVTTL;
+#NET Test_5	           LOC = A3 |IOSTANDARD = LVTTL;
+#NET Test_6	           LOC = A4 |IOSTANDARD = LVTTL;
+
+
+
+NET "Clk_50M" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 20 MHz HIGH 50%;
+
+NET "Clk_50M" CLOCK_DEDICATED_ROUTE = FALSE; 
+PIN "DCM1/DCM_SP_INST.CLKIN" CLOCK_DEDICATED_ROUTE = FALSE; 
+
+#NET "Clk_30M" TNM_NET = clk;
+#TIMESPEC TS_clk = PERIOD "clk" 30 MHz HIGH 50%;

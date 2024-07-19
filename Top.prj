@@ -1,0 +1,7 @@
+verilog work "user/B128S102.v"
+verilog work "user/SpeedM.v"
+verilog work "user/S3_DCM_50_30.V"
+verilog work "user/S3_DCM_50_120.v"
+verilog work "user/Dir_Get.v"
+verilog work "user/AD.v"
+verilog work "user/Top.v"

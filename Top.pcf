@@ -1,0 +1,130 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jul 19 16:20:25 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Clk_50M" LOCATE = SITE "R7" LEVEL 1;
+PIN Clk_50M_pin<0> = BEL "Clk_50M" PINNAME PAD;
+PIN "Clk_50M_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "RST_INPUT" LOCATE = SITE "A7" LEVEL 1;
+COMP "PWMH1" LOCATE = SITE "J6" LEVEL 1;
+COMP "PWML1" LOCATE = SITE "T8" LEVEL 1;
+COMP "Hall_a" LOCATE = SITE "C5" LEVEL 1;
+COMP "Hall_b" LOCATE = SITE "C2" LEVEL 1;
+COMP "Hall_c" LOCATE = SITE "E1" LEVEL 1;
+PIN DCM1/DCM_SP_INST_pin<10> = BEL "DCM1/DCM_SP_INST" PINNAME CLKIN;
+PIN "DCM1/DCM_SP_INST_pin<10>" CLOCK_DEDICATED_ROUTE = FALSE;
+TIMEGRP DCM1_CLKFX_BUF = BEL "Dir_Get_0/Dir_Get_State_FSM_FFd2" BEL
+        "Dir_Get_0/Dir_Get_State_FSM_FFd1" BEL
+        "Dir_Get_0/Dir_Get_State_FSM_FFd3" BEL "Dir_Get_0/Hall_State_2" BEL
+        "Dir_Get_0/Hall_State_1" BEL "Dir_Get_0/Hall_State_0" BEL
+        "Dir_Get_0/HallReg_4_2" BEL "Dir_Get_0/HallReg_4_1" BEL
+        "Dir_Get_0/HallReg_4_0" BEL "Dir_Get_0/HallReg_3_2" BEL
+        "Dir_Get_0/HallReg_3_1" BEL "Dir_Get_0/HallReg_3_0" BEL
+        "Dir_Get_0/HallReg_2_2" BEL "Dir_Get_0/HallReg_2_1" BEL
+        "Dir_Get_0/HallReg_2_0" BEL "Dir_Get_0/SpeedDir_Reg" BEL
+        "Dir_Get_0/REV_Cnt_3" BEL "Dir_Get_0/REV_Cnt_2" BEL
+        "Dir_Get_0/REV_Cnt_1" BEL "Dir_Get_0/REV_Cnt_0" BEL
+        "Dir_Get_0/FWD_Cnt_3" BEL "Dir_Get_0/FWD_Cnt_2" BEL
+        "Dir_Get_0/FWD_Cnt_1" BEL "Dir_Get_0/FWD_Cnt_0" BEL
+        "Dir_Get_0/HallReg_1_2" BEL "Dir_Get_0/HallReg_1_1" BEL
+        "Dir_Get_0/HallReg_1_0" BEL "AD_0/B128S102_0/sclk" BEL
+        "AD_0/B128S102_0/AD_Complete_Flag" BEL "AD_0/B128S102_0/din" BEL
+        "AD_0/B128S102_0/add0" BEL "AD_0/B128S102_0/B128_state_FSM_FFd33" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd34" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd32" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd31" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd30" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd29" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd28" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd27" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd26" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd25" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd24" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd23" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd22" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd21" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd20" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd19" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd18" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd17" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd16" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd15" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd14" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd13" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd12" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd11" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd10" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd9" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd8" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd7" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd6" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd5" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd4" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd3" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd2" BEL
+        "AD_0/B128S102_0/B128_state_FSM_FFd1" BEL "AD_0/AD_10_state_FSM_FFd23"
+        BEL "AD_0/AD_10_state_FSM_FFd24" BEL "AD_0/AD_10_state_FSM_FFd1" BEL
+        "AD_0/AD_10_state_FSM_FFd2" BEL "AD_0/AD_10_state_FSM_FFd22" BEL
+        "AD_0/AD_10_state_FSM_FFd20" BEL "AD_0/AD_10_state_FSM_FFd19" BEL
+        "AD_0/AD_10_state_FSM_FFd21" BEL "AD_0/AD_10_state_FSM_FFd17" BEL
+        "AD_0/AD_10_state_FSM_FFd16" BEL "AD_0/AD_10_state_FSM_FFd18" BEL
+        "AD_0/AD_10_state_FSM_FFd14" BEL "AD_0/AD_10_state_FSM_FFd13" BEL
+        "AD_0/AD_10_state_FSM_FFd15" BEL "AD_0/AD_10_state_FSM_FFd11" BEL
+        "AD_0/AD_10_state_FSM_FFd10" BEL "AD_0/AD_10_state_FSM_FFd12" BEL
+        "AD_0/AD_10_state_FSM_FFd8" BEL "AD_0/AD_10_state_FSM_FFd7" BEL
+        "AD_0/AD_10_state_FSM_FFd9" BEL "AD_0/AD_10_state_FSM_FFd5" BEL
+        "AD_0/AD_10_state_FSM_FFd4" BEL "AD_0/AD_10_state_FSM_FFd6" BEL
+        "AD_0/AD_10_state_FSM_FFd3" BEL "AD_0/AD_CON_state_FSM_FFd1" BEL
+        "AD_0/AD_CON_state_FSM_FFd2" BEL "AD_0/AD_CON_state_FSM_FFd20" BEL
+        "AD_0/AD_CON_state_FSM_FFd19" BEL "AD_0/AD_CON_state_FSM_FFd17" BEL
+        "AD_0/AD_CON_state_FSM_FFd16" BEL "AD_0/AD_CON_state_FSM_FFd18" BEL
+        "AD_0/AD_CON_state_FSM_FFd15" BEL "AD_0/AD_CON_state_FSM_FFd14" BEL
+        "AD_0/AD_CON_state_FSM_FFd12" BEL "AD_0/AD_CON_state_FSM_FFd11" BEL
+        "AD_0/AD_CON_state_FSM_FFd13" BEL "AD_0/AD_CON_state_FSM_FFd10" BEL
+        "AD_0/AD_CON_state_FSM_FFd9" BEL "AD_0/AD_CON_state_FSM_FFd7" BEL
+        "AD_0/AD_CON_state_FSM_FFd6" BEL "AD_0/AD_CON_state_FSM_FFd8" BEL
+        "AD_0/AD_CON_state_FSM_FFd5" BEL "AD_0/AD_CON_state_FSM_FFd4" BEL
+        "AD_0/AD_CON_state_FSM_FFd3" BEL "AD_0/R_count_17" BEL
+        "AD_0/R_count_16" BEL "AD_0/R_count_15" BEL "AD_0/R_count_14" BEL
+        "AD_0/R_count_13" BEL "AD_0/R_count_12" BEL "AD_0/R_count_11" BEL
+        "AD_0/R_count_10" BEL "AD_0/R_count_9" BEL "AD_0/R_count_8" BEL
+        "AD_0/R_count_7" BEL "AD_0/R_count_6" BEL "AD_0/R_count_5" BEL
+        "AD_0/R_count_4" BEL "AD_0/R_count_3" BEL "AD_0/R_count_2" BEL
+        "AD_0/R_count_1" BEL "AD_0/R_count_0" BEL "AD_0/cs_n" BEL
+        "AD_0/AD_10_Complete" BEL "AD_0/WD_B128_Cnt_7" BEL
+        "AD_0/WD_B128_Cnt_6" BEL "AD_0/WD_B128_Cnt_5" BEL "AD_0/WD_B128_Cnt_4"
+        BEL "AD_0/WD_B128_Cnt_3" BEL "AD_0/WD_B128_Cnt_2" BEL
+        "AD_0/WD_B128_Cnt_1" BEL "AD_0/WD_B128_Cnt_0" BEL "AD_0/channel_0" BEL
+        "AD_0/AD_10_Start" BEL "AD_0/AD_Start_Flag" BEL
+        "DCM1/CLKFX_BUFG_INST.GCLKMUX" BEL "DCM1/CLKFX_BUFG_INST";
+TIMEGRP DCM2_CLKFX_BUF = BEL "SpeedM_0/SVstate_PN_FSM_FFd2" BEL
+        "SpeedM_0/SVstate_PN_FSM_FFd1" BEL "SpeedM_0/Filter_State_FSM_FFd1"
+        BEL "SpeedM_0/hallwave4" BEL "SpeedM_0/hallwave3" BEL
+        "SpeedM_0/SVMema_PN_1_0" BEL "SpeedM_0/hallwave2" BEL
+        "SpeedM_0/SVMema_PN_0_0" BEL "SpeedM_0/hallwave1" BEL
+        "SpeedM_0/SV_EN_FLAG_PN" BEL "SpeedM_0/Speed_Value_0" BEL
+        "SpeedM_0/SVCnt_PN_29" BEL "SpeedM_0/SVCnt_PN_28" BEL
+        "SpeedM_0/SVCnt_PN_27" BEL "SpeedM_0/SVCnt_PN_26" BEL
+        "SpeedM_0/SVCnt_PN_25" BEL "SpeedM_0/SVCnt_PN_24" BEL
+        "SpeedM_0/SVCnt_PN_23" BEL "SpeedM_0/SVCnt_PN_22" BEL
+        "SpeedM_0/SVCnt_PN_21" BEL "SpeedM_0/SVCnt_PN_20" BEL
+        "SpeedM_0/SVCnt_PN_19" BEL "SpeedM_0/SVCnt_PN_18" BEL
+        "SpeedM_0/SVCnt_PN_17" BEL "SpeedM_0/SVCnt_PN_16" BEL
+        "SpeedM_0/SVCnt_PN_15" BEL "SpeedM_0/SVCnt_PN_14" BEL
+        "SpeedM_0/SVCnt_PN_13" BEL "SpeedM_0/SVCnt_PN_12" BEL
+        "SpeedM_0/SVCnt_PN_11" BEL "SpeedM_0/SVCnt_PN_10" BEL
+        "SpeedM_0/SVCnt_PN_9" BEL "SpeedM_0/SVCnt_PN_8" BEL
+        "SpeedM_0/SVCnt_PN_7" BEL "SpeedM_0/SVCnt_PN_6" BEL
+        "SpeedM_0/SVCnt_PN_5" BEL "SpeedM_0/SVCnt_PN_4" BEL
+        "SpeedM_0/SVCnt_PN_3" BEL "SpeedM_0/SVCnt_PN_2" BEL
+        "SpeedM_0/SVCnt_PN_1" BEL "SpeedM_0/SVCnt_PN_0" BEL
+        "DCM2/CLKFX_BUFG_INST.GCLKMUX" BEL "DCM2/CLKFX_BUFG_INST";
+PIN DCM1/DCM_SP_INST_pins<3> = BEL "DCM1/DCM_SP_INST" PINNAME CLKIN;
+PIN DCM2/DCM_SP_INST_pins<3> = BEL "DCM2/DCM_SP_INST" PINNAME CLKIN;
+TIMEGRP clk = PIN "DCM1/DCM_SP_INST_pins<3>" PIN "DCM2/DCM_SP_INST_pins<3>";
+TS_clk = PERIOD TIMEGRP "clk" 20 MHz HIGH 50%;
+TS_DCM2_CLKFX_BUF = PERIOD TIMEGRP "DCM2_CLKFX_BUF" TS_clk * 2.4 HIGH 50%;
+TS_DCM1_CLKFX_BUF = PERIOD TIMEGRP "DCM1_CLKFX_BUF" TS_clk * 0.6 HIGH 50%;
+SCHEMATIC END;
+
