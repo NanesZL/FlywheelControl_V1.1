@@ -341,25 +341,25 @@ module Top(
   /*************************** Center_Control ********************************/
   ////////////////////////////////////////////////////////////////////////
 
-  //wire [11:0]Insert_Data;   //dsp insert data for nenghao to fanjie
-  //wire ModeNH_Over_Flag;
-  //
-  //Center_Control Center_Control_0(
-  //  .clk(Clk_30M_out),
-  //  .rst_n(RST),
-  //  .Modechg_flag(Modechg_flag),
-  //  .BrakeMode(BrakeMode),
-  //  .LT1800_Flag(LT1800_Flag),
-  //  .start_flag(start_flag),
-  //  .AD_Current(AD_Current_0),
-  //  .AD_Torque(AD_Torque),
-  //  .torque_flag(Q_OE),
-  //  .ctrl_data(ctrl_data),
-  //  .Clr_flag(Clr_flag),
-  //  .ModeNH_Over_Flag(ModeNH_Over_Flag),
-  //  .Insert_Data(Insert_Data)
-  //  );
-  //
+  wire [11:0]Insert_Data;   //dsp insert data for nenghao to fanjie
+  wire ModeNH_Over_Flag;
+  
+  Center_Control Center_Control_0(
+   .clk(Clk_30M_out),
+   .rst_n(RST),
+   .Modechg_flag(Modechg_flag),
+   .BrakeMode(BrakeMode),
+   .LT1800_Flag(LT1800_Flag),
+   .start_flag(start_flag),
+   .AD_Current(AD_Current_0),
+   .AD_Torque(AD_Torque),
+   .torque_flag(Q_OE),
+   .ctrl_data(ctrl_data),
+   .Clr_flag(Clr_flag),
+   .ModeNH_Over_Flag(ModeNH_Over_Flag),
+   .Insert_Data(Insert_Data)
+   );
+  
 
   ////////////////////////////////////////////////////////////////////////
   /*************************** Data_Transfer ********************************/
