@@ -3,15 +3,18 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Fri Jul 19 16:20:27 2024">
+<application name="pn" timeStamp="Sat Jul 20 15:50:33 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="DE165E075C5541BBB2CB6E74AB30BE70" type="project"/>
-<property name="ProjectIteration" value="1" type="project"/>
+<property name="ProjectIteration" value="14" type="project"/>
 <property name="ProjectFile" value="E:/Zhangliumingyuan/ISE_Projects/FlywheelControl_V1.1/FlywheelControl_V1.1.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2024-07-19T16:13:33" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
 <property name="PROPEXT_xilxSynthMaxFanout_virtex2" value="100000" type="process"/>
+<property name="PROPEXT_xstUseClockEnable_virtex4" value="Yes" type="process"/>
+<property name="PROPEXT_xstUseSyncReset_virtex4" value="Yes" type="process"/>
+<property name="PROPEXT_xstUseSyncSet_virtex4" value="Yes" type="process"/>
 <property name="PROP_Enable_Message_Filtering" value="false" type="design"/>
 <property name="PROP_FitterReportFormat" value="HTML" type="process"/>
 <property name="PROP_LastAppliedGoal" value="Balanced" type="design"/>
@@ -25,20 +28,22 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2024-07-19T16:13:33" type="design"/>
 <property name="PROP_intWbtProjectID" value="DE165E075C5541BBB2CB6E74AB30BE70" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="1" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="14" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="false" type="design"/>
-<property name="PROP_DevFamily" value="Spartan3A and Spartan3AN" type="design"/>
-<property name="PROP_DevDevice" value="xc3s200an" type="design"/>
-<property name="PROP_DevFamilyPMName" value="spartan3a" type="design"/>
-<property name="PROP_DevPackage" value="ftg256" type="design"/>
+<property name="PROP_DevFamily" value="Virtex4" type="design"/>
+<property name="PROP_DevDevice" value="xc4vlx25" type="design"/>
+<property name="PROP_DevFamilyPMName" value="virtex4" type="design"/>
+<property name="PROP_DevPackage" value="ff668" type="design"/>
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
-<property name="PROP_DevSpeed" value="-4" type="design"/>
+<property name="PROP_DevSpeed" value="-10" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
+<property name="FILE_COREGEN" value="2" type="source"/>
 <property name="FILE_UCF" value="1" type="source"/>
-<property name="FILE_VERILOG" value="19" type="source"/>
+<property name="FILE_VERILOG" value="30" type="source"/>
+<property name="FILE_XAW" value="1" type="source"/>
 </section>
 </application>
 </document>

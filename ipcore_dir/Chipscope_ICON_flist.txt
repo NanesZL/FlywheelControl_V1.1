@@ -1,0 +1,16 @@
+# Output products list for <Chipscope_ICON>
+Chipscope_ICON.asy
+Chipscope_ICON.constraints\Chipscope_ICON.ucf
+Chipscope_ICON.constraints\Chipscope_ICON.xdc
+Chipscope_ICON.gise
+Chipscope_ICON.ngc
+Chipscope_ICON.sym
+Chipscope_ICON.ucf
+Chipscope_ICON.v
+Chipscope_ICON.veo
+Chipscope_ICON.xco
+Chipscope_ICON.xdc
+Chipscope_ICON.xise
+Chipscope_ICON_flist.txt
+Chipscope_ICON_readme.txt
+Chipscope_ICON_xmdf.tcl

@@ -5,16 +5,18 @@ run
 -ifmt mixed
 -ofn Top
 -ofmt NGC
--p xc3s200an-4-ftg256
+-p xc4vlx25-10-ff668
 -top Top
 -opt_mode Speed
 -opt_level 1
+-power NO
 -iuc NO
 -keep_hierarchy No
 -netlist_hierarchy As_Optimized
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
+-sd {"ipcore_dir"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /
@@ -22,6 +24,7 @@ run
 -case Maintain
 -slice_utilization_ratio 100
 -bram_utilization_ratio 100
+-dsp_utilization_ratio 100
 -verilog2001 YES
 -fsm_extract YES -fsm_encoding Auto
 -safe_implementation No
@@ -40,10 +43,11 @@ run
 -mux_extract Yes
 -resource_sharing YES
 -async_to_sync NO
--mult_style Auto
+-use_dsp48 Auto
 -iobuf YES
 -max_fanout 100000
--bufg 24
+-bufg 32
+-bufr 24
 -register_duplication YES
 -register_balancing No
 -slice_packing YES

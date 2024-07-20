@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Zhangliumingyuan\ISE_Projects\FlywheelControl_V1.1\Top.ncd
+OUTFILE=E:\Zhangliumingyuan\ISE_Projects\FlywheelControl_V1.1\Top.bit
+FAMILY=Virtex4
+PART=xc4vlx25-10ff668
+WORKINGDIR=E:\Zhangliumingyuan\ISE_Projects\FlywheelControl_V1.1
+LICENSE=WebPack
+USER_INFO=_

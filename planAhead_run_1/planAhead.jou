@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Jul 20 15:22:05 2024
+# Process ID: 26516
+# Log file: E:/Zhangliumingyuan/ISE_Projects/FlywheelControl_V1.1/planAhead_run_1/planAhead.log
+# Journal file: E:/Zhangliumingyuan/ISE_Projects/FlywheelControl_V1.1/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/Zhangliumingyuan/ISE_Projects/FlywheelControl_V1.1/pa.fromNetlist.tcl

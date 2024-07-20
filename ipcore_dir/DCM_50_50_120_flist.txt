@@ -1,0 +1,2 @@
+# Output products list for <DCM_50_50_120>
+DCM_50_50_120_flist.txt
